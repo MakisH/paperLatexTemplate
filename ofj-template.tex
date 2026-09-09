@@ -51,11 +51,13 @@
 \usepackage{orcidlink}
 \usepackage{cite}
 \usepackage{xspace} % Don't remove spaces following \mbox{} etc
-\usepackage{cleveref}
 
 % hyperref should be loaded last, to prevent conflicts with other packages
 % For example, to prevent this warning: https://tex.stackexchange.com/q/16268/27863
 \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+
+% cleveref requires that it is loaded after hyperref
+\usepackage{cleveref}
 
 \newcommand{\authorcontributions}[1]{%
 \vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Author Contributions:} {#1}\par}}
